@@ -29,7 +29,51 @@ playlist = []
 
 # Playlist
 
+# Volume Control DB
 
+volumedb = mongodb.volume
+
+async def get_volume(chat_id: int) -> int:
+    """Get volume level for a chat"""
+    chat = await volumedb.find_one({"chat_id": chat_id})
+    if not chat:
+        return 100
+    return chat.get("volume", 100)
+
+async def set_volume(chat_id: int, volume: int):
+    """Set volume level for a chat"""
+    return await volumedb.update_one(
+        {"chat_id": chat_id},
+        {"$set": {"volume": volume}},
+        upsert=True
+    )
+
+async def reset_volume(chat_id: int):
+    """Reset volume to default (100)"""
+    return await volumedb.delete_one({"chat_id": chat_id})
+
+# Volume Cache
+volume_cache = {}
+
+async def cache_volume(chat_id: int) -> int:
+    """Get volume from cache or database"""
+    if chat_id in volume_cache:
+        return volume_cache[chat_id]
+    volume = await get_volume(chat_id)
+    volume_cache[chat_id] = volume
+    return volume
+
+async def set_cache_volume(chat_id: int, volume: int):
+    """Update volume in cache and database"""
+    volume_cache[chat_id] = volume
+    await set_volume(chat_id, volume)
+
+async def clear_volume_cache(chat_id: int = None):
+    """Clear volume cache for a chat or all chats"""
+    if chat_id:
+        volume_cache.pop(chat_id, None)
+    else:
+        volume_cache.clear()
 async def _get_playlists(chat_id: int) -> Dict[str, int]:
     _notes = await playlistdb.find_one({"chat_id": chat_id})
     if not _notes:
