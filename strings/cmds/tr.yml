@@ -8,109 +8,109 @@
 # All rights reserved.
 
 
-# Türkçe Dilinde Komutlar
+# Commands in English Language
 
-# Bot Komutları
-PING_COMMAND : ["ping"]
+# Bot Commands
+PING_COMMAND : ["ping", "alive", "aalive"]
 PRIVACY_COMMAND : ["privacy"]
-START_COMMAND : ["baslat"]
-HELP_COMMAND : [ "yardim", "yardım"]
-SETTINGS_COMMAND : ["ayarlar", "ayar"]
+START_COMMAND : ["start"]
+HELP_COMMAND : ["help"]
+SETTINGS_COMMAND : ["settings", "setting"]
 RELOAD_COMMAND : ["admincache", "reload"]
 GSTATS_COMMAND : ["gstats"]
 STATS_COMMAND : ["stats"]
-LANGUAGE_COMMAND : ["dil", "diller"]
+LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
-# Oynatma Komutları
-PLAY_COMMAND : ["oynat", "voynat", "coynat"]
-PLAYMODE_COMMAND : ["oynatmamodu"]
-CHANNELPLAY_COMMAND : ["kanaloynat"]
-STREAM_COMMAND : ["stream", "cstream"]
+# Play Commands
+PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAYMODE_COMMAND : ["playmode"]
+CHANNELPLAY_COMMAND : ["channelplay"]
+STREAM_COMMAND : ["stream", "cstream", "streamforce", "cstreamforce"]
 
-#Çalma Listeleri Komutu
-PLAYLIST_COMMAND : ["oynatmalistesi"]
-PLAY_PLAYLIST_COMMAND : ["oynatmalistesinioynat", "voynatmalistesinioynat"]
-DELETE_PLAYLIST_COMMAND : ["oynatmalistesinisil"]
-ADD_PLAYLIST_COMMAND : ["pekle"]
-
-
-# Araçlar
-QUEUE_COMMAND : ["csira", "sira"]
-SONG_COMMAND : [ "sarki", "muzik", "indir"]
-LYRICS_COMMAND : ["sarkisozu"]
+#Playlists Command
+PLAYLIST_COMMAND : ["playlist"]
+PLAY_PLAYLIST_COMMAND : ["playplaylist", "vplayplaylist"]
+DELETE_PLAYLIST_COMMAND : ["deleteplaylist", "delplaylist"]
+ADD_PLAYLIST_COMMAND : ["addplaylist"]
 
 
-# Yönetici Komutları
-AUTH_COMMAND : ["yetki", "yetkiver"]
-UNAUTH_COMMAND : [ "yetkial"]
-AUTHUSERS_COMMAND : ["yetkililer"]
-PAUSE_COMMAND : ["duraklat", "cduraklat","kduraklat"]
-RESUME_COMMAND : ["devam","cdevam", "kdevam"]
-MUTE_COMMAND : ["sustur", "csustur", "ksustur"]
+# Tools
+QUEUE_COMMAND : ["queue","cqueue","cplayer", "playing", "cplaying", "player"]
+SONG_COMMAND : ["song", "video"]
+LYRICS_COMMAND : ["lyrics"]
+
+
+# Admin Commands
+AUTH_COMMAND : ["auth"]
+UNAUTH_COMMAND : ["unauth"]
+AUTHUSERS_COMMAND : ["authusers"]
+PAUSE_COMMAND : ["pause", "cpause"]
+RESUME_COMMAND : ["resume", "cresume"]
+MUTE_COMMAND : ["cmute", "mute"]
 UNMUTE_COMMAND : ["unmute", "cunmute"]
-STOP_COMMAND : ["durdur", "cdurdur", "kdurdur"]
-SKIP_COMMAND : ["atla", "catla","katla"]
-SHUFFLE_COMMAND : ["ckaristir", "ckaristir", "karistir"]
-LOOP_COMMAND : ["cdongu", "dongu"]
-SEEK_COMMAND : ["sar", "csar"]
-SEEK_BACK_COMMAND : ["ilerisar", "gerisar", "cilerisar", "cgerisar"]
-REBOOT_COMMAND : ["yenidenbaslat"]
+STOP_COMMAND : ["stop", "end", "cstop", "cend"]
+SKIP_COMMAND : ["skip", "cskip"]
+SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
+LOOP_COMMAND : ["loop", "cloop"]
+SEEK_COMMAND : ["seek", "cseek"]
+SEEK_BACK_COMMAND : ["seekback", "cseekback"]
+REBOOT_COMMAND : ["reboot"]
 
-# Sudo Kullanıcıları Şikayetleri
+# Sudo Users Commaands
 
-# sudo komutu
-ADDSUDO_COMMAND : ["sudoekle"]
-DELSUDO_COMMAND : [ "sudosil"]
-SUDOUSERS_COMMAND : ["sudolistesi"]
+# Sudo Command
+ADDSUDO_COMMAND : ["addsudo"]
+DELSUDO_COMMAND : ["delsudo"]
+SUDOUSERS_COMMAND : ["sudolist"]
 
-#Yayın 
-BROADCAST_COMMAND : ["reklam", "duyuru"]
+#Broadcast 
+BROADCAST_COMMAND : ["broadcast", "gcast"]
 
-#Kara liste sohbeti
-BLACKLISTCHAT_COMMAND : [ "grupyasakla"]
-WHITELISTCHAT_COMMAND : ["grupyasakkaldir"]
-BLACKLISTEDCHAT_COMMAND : ["yasakligruplar"]
+#Blacklist chat
+BLACKLISTCHAT_COMMAND : ["blacklistchat"]
+WHITELISTCHAT_COMMAND : ["whitelistchat"]
+BLACKLISTEDCHAT_COMMAND : ["blacklistedchat"]
 
-#Görüntülü Aramalar Komutu
+# Video Calls Command
 VIDEOLIMIT_COMMAND : ["set_video_limit"]
 VIDEOMODE_COMMAND : ["videomode"]
 
-#Bakım
-MAINTENANCE_COMMAND : [ "bakimmodu", "bakim"]
+#Mantenance
+MAINTENANCE_COMMAND : ["maintenance"]
 LOGGER_COMMAND : ["logger"]
 
 #Heroku
-GETLOG_COMMAND : ["log"]
+GETLOG_COMMAND : ["log", "logs", "get_log", "getlog", "get_logs", "getlogs"]
 GETVAR_COMMAND : ["get_var", "getvar"]
 DELVAR_COMMAND : ["del_var", "delvar"]
-SETVAR_COMMAND : ["setvar"]
-USAGE_COMMAND : ["kullanim"]
+SETVAR_COMMAND : ["set_var", "setvar"]
+USAGE_COMMAND : ["usage"]
 
 
-#Temel Bot Komutları
-UPDATE_COMMAND : ["guncelle"]
+#Basic Bot Commands
+UPDATE_COMMAND : ["update","gitpull", "up"]
 RESTART_COMMAND : ["restart"]
 AUTOEND_COMMAND : ["autoend"]
 
-#Özel Bot Modu
+#Private Bot Mode
 AUTHORIZE_COMMAND : ["authorize"]
 UNAUTHORIZE_COMMAND : ["unauthorize"]
 AUTHORIZED_COMMAND : ["authorized"]
 
-#Kullanıcıları Engelle Komutu
-BLOCK_COMMAND : ["yasakla"]
-UNBLOCK_COMMAND : ["yasakkaldir"]
-BLOCKED_COMMAND : ["yasaklilar"]
+#Block Users Command
+BLOCK_COMMAND : ["block"]
+UNBLOCK_COMMAND : ["unblock"]
+BLOCKED_COMMAND : ["blockedusers"]
 
-#HIZ TESTİ
-SPEEDTEST_COMMAND : ["hiztesti"]
+#sPEEDTEST
+SPEEDTEST_COMMAND : ["speedtest"]
 
-#Sesli sohbet komutları
-ACTIVEVC_COMMAND : ["aktifses"]
-ACTIVEVIDEO_COMMAND : ["aktifvideo"]
+#Voice chat commands
+ACTIVEVC_COMMAND : ["activevoice","activevc"]
+ACTIVEVIDEO_COMMAND : ["activevideo","activevd"]
 AC_COMMAND: ["ac"]
 
 #Gban Commands
 GBAN_COMMAND : ["gban"]
 UNGBAN_COMMAND : ["ungban"]
-GBANNED_COMMAND : ["gbannedusers", "gbanlist"]
+GBANNED_COMMAND : ["gbannedusers"]
