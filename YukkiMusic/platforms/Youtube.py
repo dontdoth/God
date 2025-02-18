@@ -1,15 +1,20 @@
-import asyncio
 import os
 import re
+import glob
+import random
+import asyncio
 from typing import Union
 
-import yt_dlp
+from async_lru import alru_cache
+from yt_dlp import YoutubeDL
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
+import config
 from YukkiMusic.utils.database import is_on_off
-from YukkiMusic.utils.formatters import time_to_seconds
+from YukkiMusic.utils.decorators import asyncify
+from YukkiMusic.utils.formatters import seconds_to_min, time_to_seconds
 
 async def shell_cmd(cmd):
     proc = await asyncio.create_subprocess_shell(
@@ -28,7 +33,7 @@ async def shell_cmd(cmd):
 
 cookies_file = "YukkiMusic/utils/cookies.txt"
 
-class YouTubeAPI:
+class YouTube:
     def __init__(self):
         self.base = "https://www.youtube.com/watch?v="
         self.regex = r"(?:youtube\.com|youtu\.be)"
