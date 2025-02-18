@@ -1,74 +1,62 @@
-#
-# Copyright (C) 2024 by TheTeamVivek@Github, < https://github.com/TheTeamVivek >.
-#
-# This file is part of < https://github.com/TheTeamVivek/YukkiMusic > project,
-# and is released under the MIT License.
-# Please see < https://github.com/TheTeamVivek/YukkiMusic/blob/master/LICENSE >
-#
-# All rights reserved.
 
-
-# Commands in English Language
-
-# Bot Commands
-PING_COMMAND : ["ping", "alive", "aalive"]
+PING_COMMAND : ["ping", "alive", "aalive",'پینگ']
 PRIVACY_COMMAND : ["privacy"]
-START_COMMAND : ["start"]
-HELP_COMMAND : ["help"]
-SETTINGS_COMMAND : ["settings", "setting"]
-RELOAD_COMMAND : ["admincache", "reload"]
+START_COMMAND : ["start",'شروع']
+HELP_COMMAND : ["help",'کمک','راهنما']
+SETTINGS_COMMAND : ["settings", "setting",'تنظیمات','پنل']
+RELOAD_COMMAND : ["admincache", "reload",'پیکربندی']
 GSTATS_COMMAND : ["gstats"]
-STATS_COMMAND : ["stats"]
-LANGUAGE_COMMAND : ["lang", "language", "langs"]
+STATS_COMMAND : ["stats",'آما']
+LANGUAGE_COMMAND : ["lang", "language", "langs",'زبان']
 
 # Play Commands
-PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
-PLAYMODE_COMMAND : ["playmode"]
-CHANNELPLAY_COMMAND : ["channelplay"]
+PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce",'پخش']
+PLAYMODE_COMMAND : ["playmode",'حالت پخش']
+CHANNELPLAY_COMMAND : ["channelplay",'تنظیم کانال']
 STREAM_COMMAND : ["stream", "cstream", "streamforce", "cstreamforce"]
 
 #Playlists Command
-PLAYLIST_COMMAND : ["playlist"]
-PLAY_PLAYLIST_COMMAND : ["playplaylist", "vplayplaylist"]
+PLAYLIST_COMMAND : ["playlist",'لیست پخش']
+PLAY_PLAYLIST_COMMAND : ["playplaylist", "vplayplaylist",'شروع لیست پخش']
 DELETE_PLAYLIST_COMMAND : ["deleteplaylist", "delplaylist"]
-ADD_PLAYLIST_COMMAND : ["addplaylist"]
+ADD_PLAYLIST_COMMAND : ["addplaylist",'افزودن به لیست']
 
 
 # Tools
 QUEUE_COMMAND : ["queue","cqueue","cplayer", "playing", "cplaying", "player"]
-SONG_COMMAND : ["song", "video"]
+SONG_COMMAND : ["song", "video",'دانلود']
 LYRICS_COMMAND : ["lyrics"]
 
 
 # Admin Commands
-AUTH_COMMAND : ["auth"]
-UNAUTH_COMMAND : ["unauth"]
+AUTH_COMMAND : ["auth",'تایید خودکار']
+UNAUTH_COMMAND : ["unauth",'حذف تایید خودکا']
 AUTHUSERS_COMMAND : ["authusers"]
-PAUSE_COMMAND : ["pause", "cpause"]
-RESUME_COMMAND : ["resume", "cresume"]
-MUTE_COMMAND : ["cmute", "mute"]
-UNMUTE_COMMAND : ["unmute", "cunmute"]
-STOP_COMMAND : ["stop", "end", "cstop", "cend"]
-SKIP_COMMAND : ["skip", "cskip"]
-SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
-LOOP_COMMAND : ["loop", "cloop"]
-SEEK_COMMAND : ["seek", "cseek"]
-SEEK_BACK_COMMAND : ["seekback", "cseekback"]
-REBOOT_COMMAND : ["reboot"]
+PAUSE_COMMAND : ["pause", "cpause",'توقف']
+RESUME_COMMAND : ["resume", "cresume",'ادامه']
+MUTE_COMMAND : ["cmute", "mute",'بیصدا']
+UNMUTE_COMMAND : ["unmute", "cunmute",'صدا دار']
+STOP_COMMAND : ["stop", "end", "cstop", "cend",'اتمام']
+SKIP_COMMAND : ["skip", "cskip",'بعدی']
+SHUFFLE_COMMAND : ["shuffle", "cshuffle",'اتفاقی']
+LOOP_COMMAND : ["loop", "cloop",'تکرار']
+SEEK_COMMAND : ["seek", "cseek",'رد']
+SEEK_BACK_COMMAND : ["seekback", "cseekback",'عقب']
+REBOOT_COMMAND : ["reboot",'پیکربندی']
 
 # Sudo Users Commaands
 
 # Sudo Command
-ADDSUDO_COMMAND : ["addsudo"]
-DELSUDO_COMMAND : ["delsudo"]
-SUDOUSERS_COMMAND : ["sudolist"]
+ADDSUDO_COMMAND : ["addsudo",'ترفیع موزیک']
+DELSUDO_COMMAND : ["delsudo",'عزل موزیک']
+SUDOUSERS_COMMAND : ["sudolist",'لیست مدیران موزیک']
 
 #Broadcast 
-BROADCAST_COMMAND : ["broadcast", "gcast"]
+BROADCAST_COMMAND : ["broadcast", "gcast",'ارسال همگانی']
 
 #Blacklist chat
-BLACKLISTCHAT_COMMAND : ["blacklistchat"]
-WHITELISTCHAT_COMMAND : ["whitelistchat"]
+BLACKLISTCHAT_COMMAND : ["blacklistchat",'لیست چت بلاک']
+WHITELISTCHAT_COMMAND : ["whitelistchat",'لیست فعال']
 BLACKLISTEDCHAT_COMMAND : ["blacklistedchat"]
 
 # Video Calls Command
@@ -80,7 +68,7 @@ MAINTENANCE_COMMAND : ["maintenance"]
 LOGGER_COMMAND : ["logger"]
 
 #Heroku
-GETLOG_COMMAND : ["log", "logs", "get_log", "getlog", "get_logs", "getlogs"]
+GETLOG_COMMAND : ["log", "logs", "get_log", "getlog", "get_logs", "getlogs",'لاگ']
 GETVAR_COMMAND : ["get_var", "getvar"]
 DELVAR_COMMAND : ["del_var", "delvar"]
 SETVAR_COMMAND : ["set_var", "setvar"]
@@ -88,9 +76,9 @@ USAGE_COMMAND : ["usage"]
 
 
 #Basic Bot Commands
-UPDATE_COMMAND : ["update","gitpull", "up"]
-RESTART_COMMAND : ["restart"]
-AUTOEND_COMMAND : ["autoend"]
+UPDATE_COMMAND : ["update","gitpull", "up",'اپدیت','آپدیت']
+RESTART_COMMAND : ["restart",'شروع دوباره']
+AUTOEND_COMMAND : ["autoend",'ختم خودکار']
 
 #Private Bot Mode
 AUTHORIZE_COMMAND : ["authorize"]
@@ -98,19 +86,19 @@ UNAUTHORIZE_COMMAND : ["unauthorize"]
 AUTHORIZED_COMMAND : ["authorized"]
 
 #Block Users Command
-BLOCK_COMMAND : ["block"]
-UNBLOCK_COMMAND : ["unblock"]
-BLOCKED_COMMAND : ["blockedusers"]
+BLOCK_COMMAND : ["block",'بلاک']
+UNBLOCK_COMMAND : ["unblock",'حذف بلاک']
+BLOCKED_COMMAND : ["blockedusers",'لیست بلاک']
 
 #sPEEDTEST
 SPEEDTEST_COMMAND : ["speedtest"]
 
 #Voice chat commands
-ACTIVEVC_COMMAND : ["activevoice","activevc"]
-ACTIVEVIDEO_COMMAND : ["activevideo","activevd"]
+ACTIVEVC_COMMAND : ["activevoice","activevc",'چت فعال']
+ACTIVEVIDEO_COMMAND : ["activevideo","activevd",'ویدیو فعال']
 AC_COMMAND: ["ac"]
 
 #Gban Commands
-GBAN_COMMAND : ["gban"]
-UNGBAN_COMMAND : ["ungban"]
-GBANNED_COMMAND : ["gbannedusers"]
+GBAN_COMMAND : ["gban",'بن']
+UNGBAN_COMMAND : ["ungban",'حذف بن']
+GBANNED_COMMAND : ["gbannedusers",'لیست بن']
